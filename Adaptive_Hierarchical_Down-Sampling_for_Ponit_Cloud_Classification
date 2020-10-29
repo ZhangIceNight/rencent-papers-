@@ -1,0 +1,10 @@
+对点云进行自适应分层下采样
+Abstract
+
+Deterministic down-sampling of an unordered point cloud in a deep neural network has not been rigorously studied so far. Existing methods down-sample the points regardless of their importance to the network output. As a result, some important points in the point cloud may be removed, while less valuable points may be passed to next layers. In contrast, the proposed adaptive down-sampling method samples the points by taking into account the importance of each point, which varies according to application, task and training data. In this paper, we propose a novel deterministic, adaptive, permutation-invariant down-sampling layer, called Critical Points Layer (CPL), which learns to reduce the number of points in an unordered point cloud while retaining the important (critical) ones. Unlike most graph-based point cloud down-sampling methods that use k-NN to find the neighboring points, CPL is a global down-sampling method, rendering it computationally very efficient. The proposed layer can be used along with a graph-based point cloud convolution layer to form a convolutional neural network, dubbed CP-Net in this paper. We introduce a CP-Net for 3D object classification task that achieves high accuracy for the ModelNet40 dataset among point cloud based methods, which validates the effectiveness of the CPL.
+
+到目前为止，对深层神经网络中无序点云的确定性下采样还没有进行严格的研究。现有的对点云进行下采样的方法没有考虑它们对网络输出的重要性。因此，点云中的一些重要点可能会被删除，而价值较低的点可能会传递到下一层。与此相反，本文提出的自适应下采样方法根据应用、任务和训练数据的不同，考虑每个点的重要性。在这篇论文中，我们提出了一个新的确定性，自适应，排列不变的下采样层，称为临界点层（CPL），它可以学习减少无序点云中的点数，同时保留重要（关键）点。与大多数基于图的点云下采样方法（使用k-nn寻找临近点）不同，CPL是一种全局下采样方法，在计算上非常高效。该层可与基于图的点云卷积层一起构成卷积神经网络，本文称之为CP网络。在基于点云的方法中，我们引入了一个用于三维物体分类任务的CP网络，该网络对ModelNet40数据集的分类精度较高，验证了CPL的有效性。
+
+Dataset
+ModelNet40 3D object classification dataset
+

@@ -1,0 +1,12 @@
+一种基于手势识别的高效点云模型
+
+Abstract
+
+Point clouds contain rich spatial information, which provides complementary cues for gesture recognition. In this paper, we formulate gesture recognition as an irregular sequence recognition problem and aim to capture long-term spatial correlations across point cloud sequences. A novel and effective PointLSTM is proposed to propagate information from past to future while preserving the spatial structure. The proposed PointLSTM combines state information from neighboring points in the past with current features to update the current states by a weight-shared LSTM layer. This method can be integrated into many other sequence learning approaches. In the task of gesture recognition, the proposed PointLSTM achieves state-of-the-art results on two challenging datasets (NVGesture and SHREC’17) and outperforms previous skeleton-based methods. To show its advantages in generalization, we evaluate our method on MSR Action3D dataset, and it produces competitive results with previous skeleton-based methods.
+
+点云包含丰富的空间信息，为手势识别提供了补充线索。本文将手势识别问题归结为一个不规则序列的识别问题，目的是获取点云序列的长期空间相关性。本文提出了一种新颖有效的PointLSTM，在保持空间结构的同时，实现了信息从过去到未来的传播。该算法将相邻点过去的状态信息与当前特征相结合，通过权值共享的LSTM层来更新当前状态。这种方法可以集成到许多其他的序列学习方法中。在手势识别的任务中，所提出的PointLSTM在两个具有挑战性的数据集（nvgence和SHREC'17）上取得了最新的结果，并优于以往基于骨架的方法。为了显示其在泛化方面的优势，我们在MSR Action3D数据集上对我们的方法进行了评估，并与以前的基于骨架的方法进行了比较。
+
+Datasets
+  NVGesture 
+  SHREC
+  MSR Action3D

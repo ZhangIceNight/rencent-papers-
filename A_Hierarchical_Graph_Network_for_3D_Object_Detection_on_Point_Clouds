@@ -1,0 +1,12 @@
+一个对3D点云进行目标检测的分层图网络
+Abstract
+
+  3D目标检测在点云领域有许多应用。但是，大多数已知的点云目标检测方法都没有能够完全地适应点云的特性（例如稀疏性）,因此一些关键的语义信息就无法被很好地捕获（例如形状信息）。
+  本文中，我们提出了一个基于hierarchical graph network （HGNet）的新的图神经网络（GConv）来用于3D目标检测，它可以直接地处理原始点云来预测3D bounding boxes。HGNet 有效地捕获了点之间的关系，并且utilizes 了 the multilevel semantics for 目标检测。
+
+
+Datasets 
+  SUN RGB-D 
+  ScanNet-V2
+
+Zhejiang University
