@@ -1,0 +1,10 @@
+End-to-end 3D Point Cloud Instance Segmentation without Detection
+
+Abstract
+3D instance segmentation plays a predominant role in environment perception of robotics and augmented reality. Many deep learning based methods have been presented recently for this task. These methods rely on either a detection branch to propose objects or a grouping step to assemble same-instance points. However, detection based methods do not ensure a consistent instance label for each point, while the grouping step requires parameter-tuning and is computationally expensive. In this paper, we introduce an assign-and-suppress network, dubbed as AS-Net, to enable end-to-end instance segmentation without detection and a separate step of grouping. The core idea is to frame instance segmentation as a candidate assignment problem. At first, a set of instance candidates are sampled. Then we propose an assignment module for candidate assignment and a suppression module to eliminate redundant candidates. A mapping between instance labels and instance candidates is further sought to construct an instance grouping loss for the network training. Experimental results demonstrate that our method is more effective and efficient than previous detection-free approaches.
+
+三维实例分割在机器人环境感知和增强现实中占有重要地位。最近有许多基于深度学习的方法被提出。这些方法要么依赖于检测分支来提出对象，要么依赖于分组步骤来组合相同的实例点。然而，基于检测的方法不能确保每个点的实例标签一致，而分组步骤需要参数调整，并且计算开销很大。在本文中，我们引入了一个分配和抑制网络，称为网络，以实现端到端的实例分割，而不需要检测和单独的分组步骤。其核心思想是将实例分割作为一个候选分配问题。首先，对一组候选实例进行抽样。然后我们提出了一个用于候选分配的分配模块和一个消除冗余候选的抑制模块。进一步寻求实例标签与候选实例之间的映射关系，构造实例分组丢失，用于网络训练。实验结果表明，与以往的无检测方法相比，我们的方法更有效。
+
+Dataset
+  Stanford 3D Indoor Semantic Dataset (S3DIS)
+  SceneNN

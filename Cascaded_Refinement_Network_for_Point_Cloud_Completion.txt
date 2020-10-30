@@ -1,0 +1,11 @@
+Cascaded Refinement Network for Point Cloud Completion
+
+Abstract
+
+Point clouds are often sparse and incomplete. Existing shape completion methods are incapable of generating details of objects or learning the complex point distributions. To this end, we propose a cascaded refinement network together with a coarse-to-fine strategy to synthesize the detailed object shapes. Considering the local details of partial input with the global shape information together, we can preserve the existing details in the incomplete point set and generate the missing parts with high fidelity. We also design a patch discriminator that guarantees every local area has the same pattern with the ground truth to learn the complicated point distribution. Quantitative and qualitative experiments on different datasets show that our method achieves superior results compared to existing state-of-the-art approaches on the 3D point cloud completion task. Our source code is available at https:// github.com/xiaogangw/cascaded-point-completion.git.
+
+点云通常稀疏且不完整。现有的形状完成方法无法生成物体的细节信息或学习复杂的点分布。为此，我们提出了一种级联细化网络和由粗到细的策略来综合详细的对象形状。综合考虑局部输入的局部细节和全局形状信息，可以在不完全点集中保留已有的细节，并生成高保真的缺失部分。我们还设计了一个斑片鉴别器，保证每一个局部区域都具有与地面真实情况相同的模式来学习复杂的点分布。在不同数据集上的定量和定性实验表明，与现有的三维点云完成方法相比，我们的方法获得了更好的结果。我们的源代码在https:// github.com/xiaogangw/cascaded-point-completion.git.
+
+Dataset
+  PCN
+  TopNet

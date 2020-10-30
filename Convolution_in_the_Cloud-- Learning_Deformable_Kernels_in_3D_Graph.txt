@@ -1,0 +1,10 @@
+Convolution in the Cloud-- Learning Deformable Kernels in 3D Graph
+
+Abstract
+
+Point clouds are among the popular geometry representations for 3D vision applications. However, without regular structures like 2D images, processing and summarizing information over these unordered data points are very challenging. Although a number of previous works attempt to analyze point clouds and achieve promising performances, their performances would degrade significantly when data variations like shift and scale changes are presented. In this paper, we propose 3D Graph Convolution Networks (3D-GCN), which is designed to extract local 3D features from point clouds across scales, while shift and scale-invariance properties are introduced. The novelty of our 3D-GCN lies in the definition of learnable kernels with a graph max-pooling mechanism. We show that 3D-GCN can be applied to 3D classification and segmentation tasks, with ablation studies and visualizations verifying the design of 3D-GCN. Our code is publicly available at https://github.com/j1a0m0e4sNTU/3dgcn.
+
+点云是三维视觉应用中常用的几何表示形式之一。然而，如果没有二维图像这样的规则结构，处理和总结这些无序数据点上的信息是非常困难的。尽管已有许多研究试图分析点云，并取得令人满意的性能，但当数据发生偏移和尺度变化时，其性能会显著下降。本文提出了一种三维图形卷积网络（3D-GCN），该网络旨在跨尺度地从点云中提取局部三维特征，同时引入平移和尺度不变性。我们的3D-GCN的新颖之处在于定义了可学习的核函数和图最大池机制。我们证明3D-GCN可以应用于3D分类和分割任务，烧蚀研究和可视化验证了3D-GCN的设计。我们的代码在https://github.com/j1a0m0e4sNTU/3dgcn。
+
+Dataset
+  ModelNet40

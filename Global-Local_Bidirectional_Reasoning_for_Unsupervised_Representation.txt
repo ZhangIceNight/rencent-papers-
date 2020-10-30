@@ -1,0 +1,14 @@
+Global-Local Bidirectional Reasoning for Unsupervised Representation Learning of 3D Point Clouds
+
+Abstract
+
+Local and global patterns of an object are closely related. Although each part of an object is incomplete, the underlying attributes about the object are shared among all parts, which makes reasoning the whole object from a single part possible. We hypothesize that a powerful representation of a 3D object should model the attributes that are shared between parts and the whole object, and distinguishable from other objects. Based on this hypothesis, we propose to learn point cloud representation by bidirectional reasoning between the local structures at different abstraction hierarchies and the global shape without human supervision. Experimental results on various benchmark datasets demonstrate the unsupervisedly learned representation is even better than supervised representation in discriminative power, generalization ability, and robustness. We show that unsupervisedly trained point cloud models can outperform their supervised counterparts on downstream classification tasks. Most notably, by simply increasing the channel width of an SSG PointNet++1, our unsupervised model surpasses the state-of-the-art supervised methods on both synthetic and real-world 3D object classification datasets. We expect our observations to offer a new perspective on learning better representation from data structures instead of human annotations for point cloud understanding.
+Code: https://github.com/raoyongming/PointGLR
+
+对象的局部和全局模式是密切相关的。虽然对象的每个部分都是不完整的，但是对象的底层属性在所有部分之间是共享的，这使得从单个部分推理整个对象成为可能。我们假设，一个强大的三维物体的表现应该建模的属性之间的部分和整个对象，并区别于其他对象。基于这个假设，我们提出在没有人工监督的情况下，通过在不同抽象层次的局部结构和全局形状之间进行双向推理来学习点云表示。在不同基准数据集上的实验结果表明，无监督学习表示在识别能力、泛化能力和鲁棒性等方面优于有监督表示。我们证明了无监督训练的点云模型在下游分类任务上的表现优于有监督的点云模型。最值得注意的是，通过简单地增加SSG PointNet++1的通道宽度，我们的无监督模型在合成和真实世界3D对象分类数据集上都超越了最先进的超级方法。我们期望我们的观察能够为从数据结构中学习更好的表示提供一个新的视角，而不是使用人工注释来理解点云。
+Code: https://github.com/raoyongming/PointGLR
+
+Dataset
+  ModelNet40
+  ScanObjectNN
+  ScanNet

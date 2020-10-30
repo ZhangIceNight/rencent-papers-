@@ -1,0 +1,13 @@
+From Image Collections to Point Clouds
+with Self-supervised Shape and Pose Networks
+
+Abstract
+
+Reconstructing 3D models from 2D images is one of the fundamental problems in computer vision. In this work, we propose a deep learning technique for 3D object reconstruction from a single image. Contrary to recent works that either use 3D supervision or multi-view supervision, we use only single view images with no pose information during training as well. This makes our approach more practical requiring only an image collection of an object category and the corresponding silhouettes. We learn both 3D point cloud reconstruction and pose estimation networks in a self-supervised manner, making use of differentiable point cloud renderer to train with 2D supervision. A key novelty of the proposed technique is to impose 3D geometric reasoning into predicted 3D point clouds by rotating them with randomly sampled poses and then enforcing cycle consistency on both 3D reconstructions and poses. In addition, using single-view supervision allows us to do test-time optimization on a given test image. Experiments on the synthetic ShapeNet and real-world Pix3D datasets demonstrate that our approach, despite using less supervision, can achieve competitive performance compared to pose-supervised and multi-view supervised approaches.
+
+从二维图像重建三维模型是计算机视觉的基本问题之一。在这项工作中，我们提出一个深度学习技术，从单一的图像重建三维物体。与最近使用三维监控或多视图监控的工作不同，我们在训练过程中只使用单视图图像，没有姿势信息。这使得我们的方法更加实用，只需要一个对象类别的图像集合和相应的轮廓。我们学习了三维点云重建和姿态估计网络，利用可微点云渲染器进行二维监督训练。该技术的一个关键创新点是，通过随机采样的姿态旋转预测的三维点云，然后对三维重建和姿态执行循环一致性，从而对预测的三维点云进行三维几何推理。此外，使用单视图监控允许我们对给定的测试图像进行测试时间优化。在合成ShapeNet和真实世界Pix3D数据集上的实验表明，尽管使用较少的监督，但是与姿势监督和多视图监督方法相比，我们的方法可以获得有竞争力的性能。
+
+Dataset
+  ShapeNet
+  Pix3D
+  

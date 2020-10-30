@@ -1,0 +1,13 @@
+Density-Based Clustering for 3D Object Detection in Point Clouds
+
+Abstract
+Current 3D detection networks either rely on 2D object proposals or try to directly predict bounding box parameters from each point in a scene. While former methods are dependent on performance of 2D detectors, latter approaches are challenging due to the sparsity and occlusion in point clouds, making it difficult to regress accurate parameters. In this work, we introduce a novel approach for 3D object detection that is significant in two main aspects:
+a) cascaded modular approach that focuses the receptive field of each module on specific points in the point cloud, for improved feature learning and b) a class agnostic instance segmentation module that is initiated using unsupervised clustering. The objective of a cascaded approach is to sequentially minimize the number of points running through the network. While three different modules perform the tasks of background-foreground segmentation, class agnostic instance segmentation and object detection, through individually trained point based networks. We also evaluate bayesian uncertainty in modules, demonstrating the over all level of confidence in our prediction results. Performance of the network is evaluated on the SUN RGB-D benchmark dataset, that demonstrates an improvement as compared to
+state-of-the-art methods.
+
+目前的三维检测网络要么依赖于二维物体方案，要么试图从场景中的每个点直接预测边界框参数。前一种方法依赖于二维探测器的性能，后一种方法由于点云的稀疏性和遮挡性而具有挑战性，很难回归出精确的参数。在这项工作中，我们介绍了一种新的三维物体检测方法，它在两个主要方面具有重要意义：
+a） 级联模块化方法，将每个模块的接受域集中在点云中的特定点上，以改进特征学习；b）使用无监督聚类启动的类无关实例分割模块。级联方法的目标是按顺序最小化通过网络的点的数量。三个不同的模块通过各自训练的点网络完成背景前景分割、类无关实例分割和目标检测等任务。我们还评估了模块中的贝叶斯不确定性，展示了我们预测结果的总体置信水平。在SUN-RGB-D基准数据集上对该网络的性能进行了评估，结果表明该网络的性能较之
+最先进的方法。
+
+Dataset
+  SUN-RGBD

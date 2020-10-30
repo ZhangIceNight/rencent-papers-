@@ -1,0 +1,12 @@
+Feature-metric Registration A Fast Semi-supervised Approach for Robust Point
+Cloud Registration without Correspondences
+
+Abstract
+
+We present a fast feature-metric point cloud registration framework, which enforces the optimisation of registration by minimising a feature-metric projection error without correspondences. The advantage of the feature metric projection error is robust to noise, outliers and density difference in contrast to the geometric projection error. Besides, minimising the feature-metric projection error does not need to search the correspondences so that the optimisation speed is fast. The principle behind the proposed method is that the feature difference is smallest if point clouds are aligned very well. We train the proposed method in a semisupervised or unsupervised approach, which requires limited or no registration label data. Experiments demonstrate our method obtains higher accuracy and robustness than the state-of-the-art methods. Besides, experimental results show that the proposed method can handle significant noise and density difference, and solve both same-source and cross-source point cloud registration.
+
+提出了一种快速的特征度量点云配准框架，该框架通过在没有对应关系的情况下最小化特征度量投影误差来实现配准的优化。与几何投影误差相比，特征度量投影误差具有对噪声、异常值和密度差的鲁棒性。另外，最小化特征度量投影误差不需要搜索对应关系，优化速度快。很好地提出了点云对齐后的最小特征点法。我们将所提出的方法训练成半监督或无监督的方法，这需要有限或不需要注册标签数据。实验表明，与现有的方法相比，该方法具有更高的精度和鲁棒性。实验结果表明，该方法能有效地处理噪声和密度差，并能同时解决同源和跨源点云的配准问题。
+
+Dataset
+  ModelNet40
+  7Scene

@@ -1,0 +1,10 @@
+End-to-End Learning Local Multi-view Descriptors for 3D Point Clouds
+
+Abstract
+
+In this work, we propose an end-to-end framework to learn local multi-view descriptors for 3D point clouds. To adopt a similar multi-view representation, existing studies use hand-crafted viewpoints for rendering in a preprocessing stage, which is detached from the subsequent descriptor learning stage. In our framework, we integrate the multiview rendering into neural networks by using a differentiable renderer, which allows the viewpoints to be optimizable parameters for capturing more informative local context of interest points. To obtain discriminative descriptors, we also design a soft-view pooling module to attentively fuse convolutional features across views. Extensive experiments on existing 3D registration benchmarks show that our method outperforms existing local descriptors both quantitatively and qualitatively.
+
+在这项工作中，我们提出了一个端到端的框架来学习三维点云的局部多视图描述符。为了采用类似的多视图表示，现有的研究在预处理阶段使用手工绘制的视点进行渲染，而预处理阶段与后续的描述符学习阶段分离。在我们的框架中，我们使用一个可微渲染器将多视图渲染集成到神经网络中，这使得视点成为可优化的参数，以获取更多信息的局部兴趣点上下文。为了获得有区别的描述符，我们还设计了一个软视图池模块来集中融合视图之间的卷积特征。在现有的三维配准基准上的大量实验表明，我们的方法在数量和质量上都优于现有的局部描述子。
+
+Dataset
+We evaluate the proposed method on the widely adopted geometric registration benchmark from 3DMatch [66]. The benchmark consists of RGB-D scans of 62 indoor scenes, an ensemble of several existing RGBD datasets [55, 49, 59, 27, 14].

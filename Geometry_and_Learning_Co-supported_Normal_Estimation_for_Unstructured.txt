@@ -1,0 +1,15 @@
+Geometry and Learning Co-supported Normal Estimation for Unstructured Point Cloud
+
+Abstract
+
+In this paper, we propose a normal estimation method for unstructured point cloud. We observe that geometric estimators commonly focus more on feature preservation but are hard to tune parameters and sensitive to noise, while learning-based approaches pursue an overall normal estimation accuracy but cannot well handle challenging regions such as surface edges. This paper presents a novel normal estimation method, under the co-support of geometric estimator and deep learning. To lowering the learning difficulty, we first propose to compute a suboptimal initial normal at each point by searching for a best fitting patch. Based on the computed normal field, we design a normal-based height map network (NH-Net) to fine-tune the suboptimal normals. Qualitative and quantitative evaluations demonstrate the clear improvements of our results over both traditional methods and learning-based methods, in terms of estimation accuracy and feature recovery.
+
+本文提出了一种非结构化点云的正态估计方法。我们观察到，几何估计器通常更注重特征保持，但参数难以调整且对噪声敏感；而基于学习的方法追求整体的法向估计精度，但不能很好地处理像曲面边缘这样的具有挑战性的区域。本文提出了一种新的正态估计方法，在几何估计和深度学习的共同支持下。为了降低学习的难度，我们首先提出通过寻找一个最佳拟合面来计算每个点的次优初始法线。基于计算出的法线场，我们设计了一个基于法线的高度映射网络（NH-Net）来微调次优法线。定性和定量评估表明，我们的结果明显优于传统方法和基于学习的方法，在估计精度和特征恢复方面。
+
+Dataset
+We use the dataset from [29] for training. The training set is built from synthetic triangular mesh
+models, including point samples and normals.
+The ground-truth point clouds consist of 21 models including 6 CAD models, 8 smooth models and 7 feature-rich
+models. To generate the noisy inputs, we introduce Gaussian noise for each point cloud with a standard deviation of
+0.1%, 0.2% and 0.3% of the diagonal length of the bounding box. The final training dataset contains 1.5M points
+from 63 noisy point clouds.
